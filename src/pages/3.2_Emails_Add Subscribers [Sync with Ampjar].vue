@@ -57,7 +57,7 @@
 					<li>
 						<div class="dd">
 							<button class="flex w-full items-center">
-								<img class="user-avatar mr-5" src="./assets/img/pete.jpg" alt="Pete Davis" /><span class="text-bright_blue">Peter Davis</span>
+								<img class="user-avatar mr-5" src="img/pete.jpg" alt="Pete Davis" /><span class="text-bright_blue">Peter Davis</span>
 							</button>
 							<div class="dd-menu dd-menu-right-bottom hidden">
 								<a class="dd-menu-item" href="#">My profile</a>
@@ -77,24 +77,34 @@
 				<h2>Import Subscribers</h2>
 				<div class="flex flex-wrap items-center justify-between">
 					<p class="sm:w-9/12 pr-3">If you have connected your preferred email service provider and sync your mailing list into Ampjar.</p>
-					<button class="btn">Sync list</button>
+					<button class="btn btn-primary">Sync list</button>
 				</div>
 				<hr>
 				<h2>Import from file</h2>
 				<div class="flex flex-wrap items-center justify-between">
 					<p class="sm:w-9/12 pr-3">You can upload an Excel or CSV file to add your subscribers.</p>
-					<button class="btn">Import list</button class="btn">
+                    <div class="flex flex-wrap items-center justify-between">
+                        <div class="checkbox-custom mb-0  sm:w-9/12 flex pr-3">
+                            <input id="add-subscribers-permission" type="checkbox" checked>
+                            <label for="add-subscribers-permission" class="checkbox-label">
+                                By uploading this database I confirm that I have been given full and proper permission to contact this database for marketing purposes.
+                            </label>
+                        </div>
+                        <button class="btn btn-primary">Import list</button>
+                    </div>
 				</div>
 				<hr>
 				<h2>Copy and paste</h2>
 				<p>Copy and paste your subscribers' information below. Provide their first name, last name, and email address, in that order. Make sure to separate the details of each subscriber with a comma, and place each subscriber on a new line!</p>
 				<textarea name="" id="" cols="30" rows="10" class="mb-6">First Name, Last Name, Email Address, First Name, Last Name, Email Address, First Name, Last Name, Email Address, First Name, Last Name, Email Address</textarea>
 				<div class="flex flex-wrap items-center justify-between">
-					<label class="checkbox-label sm:w-9/12 flex pr-3">
-						<input class="my-1 mr-3" type="checkbox">
-						<span class="text-sm">By uploading this database I confirm that I have been given full and proper permission to contact this database for marketing purposes.</span>
-					</label>
-					<button class="btn">Add subscribers</button class="btn">
+                    <div class="checkbox-custom mb-0  sm:w-9/12 flex pr-3">
+                        <input id="add-subscribers-permission" type="checkbox" checked>
+                        <label for="add-subscribers-permission" class="checkbox-label">
+                            By uploading this database I confirm that I have been given full and proper permission to contact this database for marketing purposes.
+                        </label>
+                    </div>
+					<button class="btn btn-primary">Add subscribers</button>
 				</div>
 				<hr>
 				<h2>Add a single subscriber</h2>
@@ -115,10 +125,13 @@
 					</div>
 				</form>
 				<div class="flex flex-wrap items-center justify-between">
-					<label class="checkbox-label sm:w-9/12 flex pr-3">
-						<input class="my-1 mr-3" type="checkbox"><span class="text-sm">I confirm that I have been given full and proper permission to contact this person for marketing purposes.</span>
-						</label>
-						<button class="btn">Add subscriber</button class="btn">
+                    <div class="checkbox-custom mb-0  sm:w-9/12 flex pr-3">
+                        <input id="add-subscribers-permission" type="checkbox" checked>
+                        <label for="add-subscribers-permission" class="checkbox-label">
+                            I confirm that I have been given full and proper permission to contact this person for marketing purposes.
+                        </label>
+                    </div>
+                    <button class="btn btn-primary">Add subscriber</button>
 				</div>
 			</div>
 		</div>
@@ -126,7 +139,7 @@
 </template>
 
 <script>
-import dropdown from '../src/components/dd'
+import dropdown from '../src/components/dropdown'
 
 export default { 
 	name: `App`,
