@@ -1,0 +1,87 @@
+/* Nav Main */
+.nav-side-container {
+    @apply flex-col flex-shrink-0 bg-white w-64 z-10 shadow-md;
+}
+
+.h-nav-side {
+    height: calc(100vh - theme('spacing.20'));
+}
+
+.nav-toggler-desktop {
+    @apply absolute bottom-0 right-0;
+    transform: translate(50%, 50%) rotate(0deg);
+    transition: transform .3s linear;
+}
+
+.nav-side{
+    @apply font-medium;
+    
+    a { 
+        @apply flex items-center;
+        
+        > img {
+            @apply mr-5;
+        }
+    }
+    
+    > li {
+        @apply mb-4 relative;
+    }
+}
+
+.dd-menu--nav-item {
+    /* @apply dd-menu-item overflow-hidden; */
+    padding-left: calc(theme('spacing.8') + theme('spacing.5'));
+
+    &:hover {
+        color: theme('colors.dark_blue.active');
+    }
+}
+
+.user-avatar {
+    @apply rounded-full w-8 h-8 overflow-hidden;
+}
+
+/* Nav Main Collapsed (only desktop) */
+.nav-side-container.collapsed {
+    @apply w-16;
+    
+    .nav-brand img {
+        display: none;
+    }
+    
+    .nav-brand img + img {
+        display: block;
+    }
+    
+    .nav-toggler-desktop {
+        transform: translate(50%, 50%) rotate(180deg);
+    }
+    
+    .h-nav-side {
+        overflow: visible;
+    }
+    
+    a span,
+    button span {
+        /* transition: visibility .3s linear; */
+        left: calc(100% + theme('spacing.1'));
+        top: 50%;
+        transform: translateY(-50%);
+        @apply rounded text-white bg-bright_blue whitespace-no-wrap absolute w-0 h-0 px-2 py-1 invisible;
+    }
+    
+    a:hover span,
+    button:hover span {
+        @apply w-auto h-auto visible;
+    }
+    
+    [class*=dd-menu] {
+        display: none;
+    }
+    
+    a > img,
+    .user-avatar {
+        @apply mr-0;
+    }
+}

@@ -1,0 +1,25 @@
+.card {
+    @apply flex flex-col items-center bg-white rounded-lg shadow-md p-8; 
+
+    h2 {
+        text-align: center;
+    }
+}
+
+.card-sm {
+    @apply flex flex-col items-start text-sm bg-white rounded-lg shadow-md p-0; 
+
+    .dd button {
+        &:first-child {
+            min-width: 1.125rem;
+        }
+
+        img {
+            @apply mx-auto;
+        }
+    }
+
+    .card-label {
+        @apply mb-3 rounded  px-2 py-1  text-xs flex-grow-0;
+    }
+}

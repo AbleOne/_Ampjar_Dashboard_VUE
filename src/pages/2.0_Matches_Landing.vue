@@ -62,10 +62,24 @@
 			</div>
 		</nav>
 		<div class="flex flex-col flex-grow xl:w-auto bg-gray-200 pt-20 sm:pt-0 sm:h-screen overflow-y-auto">
-            <div class="container text-center mx-auto py-16 px-5">
-                <h1 class="mb-4">Success! You’re now synced with Mailchimp</h1>
-                <p class="mb-4">One liner can go here if required.</p>
-                <button class="btn btn-primary mx-auto">Create my first email</button>
+            <div class="container mx-auto py-16 px-5">
+                <h1 class="mb-16">Matches</h1>
+                <div class="flex flex-wrap -mx-3">
+                    <div class="w-full md:w-1/2 px-3 mb-6">
+                        <div class="card">
+                            <h2>Advertising Matches</h2>
+                            <p class="text-center mb-8">Brands we’ve matched you with because their customers are perfect for you. These brands will shout you out to their customers.</p>
+                            <button class="btn">Set up</button>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 px-3 mb-6">
+                        <div class="card">
+                            <h2>Hosting Matches</h2>
+                            <p class="text-center mb-8">Brands that we think your customers would love hearing about. Shout them out in your emails, stories and on your website.</p>
+                            <button class="btn">Set up</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 		</div>
 	</div>
@@ -73,13 +87,11 @@
 
 <script>
 import dropdown from '../src/components/dropdown'
-import StarRating from 'vue-star-rating'
 
 export default { 
 	name: `App`,
 		components: {
-            dropdown,
-            StarRating
+			dropdown
 		},
 	};
 </script>

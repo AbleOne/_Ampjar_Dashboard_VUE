@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+html {
+    @apply font-sans;
+}
+
+a {
+    @apply text-bright_blue;
+}
+
+p:not(:last-child):not([class*=mb]) {
+    @apply mb-3;
+}
+
+hr {
+    border-color: theme('colors.border_color');
+    @apply my-8;
+}

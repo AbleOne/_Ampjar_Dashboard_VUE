@@ -1,0 +1,32 @@
+/* DD menu */
+.dd {
+    @apply relative;
+    
+    * {
+        @apply font-medium;
+    }
+    
+    &.dd-menu-right-top .dd-menu{
+        @apply top-100 right-0;
+    }
+    
+    &.dd-menu-right-bottom .dd-menu{
+        @apply bottom-0 right-0;
+    }
+}
+
+.dd-menu {
+    @apply absolute bg-white shadow p-3; 
+}
+
+
+.dd-menu-item {
+    @apply p-1 flex whitespace-no-wrap;
+    color: theme('colors.dark_blue.default'); 
+    
+    &:hover,
+    &:focus,
+    &:active {
+        color: theme('colors.dark_blue.active');
+    }
+}

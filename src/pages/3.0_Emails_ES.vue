@@ -62,10 +62,50 @@
 			</div>
 		</nav>
 		<div class="flex flex-col flex-grow xl:w-auto bg-gray-200 pt-20 sm:pt-0 sm:h-screen overflow-y-auto">
-            <div class="container text-center mx-auto py-16 px-5">
-                <h1 class="mb-4">Success! You’re now synced with Mailchimp</h1>
-                <p class="mb-4">One liner can go here if required.</p>
-                <button class="btn btn-primary mx-auto">Create my first email</button>
+            <div class="container mx-auto py-16 px-5">
+                <h1 class="text-center mb-4">What platform do you want to use to send your emails?</h1>
+                <p class="text-center mb-4">You can choose to send your email campaigns using your  current Email Service Provider or through Ampjar. Either way we’ll help you build and style your campaigns in minutes.</p>
+                <div class="flex flex-wrap -mx-3">
+                    <div class="w-full md:w-1/3 lg:w-1/5 px-3 mb-6">
+                        <div class="card rounded">
+                            <img src="img/mailchimp.jpg" alt="littleprintables" class="rounded-full border max-w-2xl mb-4">
+                            <strong class="whitespace-no-wrap text-sm">Mailchimp</strong>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 lg:w-1/5 px-3 mb-6">
+                        <div class="card rounded">
+                            <img src="img/shopify.jpg" alt="littleprintables" class="rounded-full border max-w-2xl mb-4">
+                            <strong class="whitespace-no-wrap text-sm">Shopify</strong>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 lg:w-1/5 px-3 mb-6">
+                        <div class="card rounded">
+                            <img src="img/klaviyo.jpg" alt="littleprintables" class="rounded-full border max-w-2xl mb-4">
+                            <strong class="whitespace-no-wrap text-sm">Klaviyo</strong>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 lg:w-1/5 px-3 mb-6">
+                        <div class="card rounded">
+                            <img src="img/constant-contact.jpg" alt="littleprintables" class="rounded-full border max-w-2xl mb-4">
+                            <strong class="whitespace-no-wrap text-sm">Constant Contact</strong>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 lg:w-1/5 px-3 mb-6">
+                        <div class="card rounded">
+                            <img src="img/convert-kit.jpg" alt="littleprintables" class="rounded-full border max-w-2xl mb-4">
+                            <strong class="whitespace-no-wrap text-sm">ConvertKit</strong>
+                        </div>
+                    </div>
+                    <form class="flex flex-col items-center mx-auto" action="">
+                        <p class="mb-4">Your Email Service Provider not yet available? Let us know your preferred platform below.</p>
+                        <div class="form-inline flex mx-auto mb-6">
+                            <input id="search-adv-matches" type="text" placeholder="Enter your ESP">
+                            <button class="btn btn-primary -ml-px">Submit</button>
+                        </div>
+                        <a href="#" class="text-gray-800 underline mb-6">I want to use Ampjar to send my emails</a>
+                        <button class="btn btn-primary">Connect ESP</button>
+                    </form>
+                </div>
             </div>
 		</div>
 	</div>

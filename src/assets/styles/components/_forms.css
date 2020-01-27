@@ -1,0 +1,43 @@
+/* Forms */
+
+.checkbox-label {
+    @apply mb-3;
+}
+
+input:not([type=checkbox]),
+select,
+textarea {
+    @apply appearance-none block w-full bg-white text-gray-700 border border-border_color rounded py-3 px-4 leading-tight;
+    
+    &:focus {
+        @apply outline-none bg-gray-100 border-gray-500;
+    }
+}
+
+textarea {
+    resize: vertical;
+    min-height: 46px;
+}
+
+.form-label {
+    @apply block text-sm font-bold mb-2;
+}
+
+.form-inline {
+    input:not([type=checkbox]),
+    select,
+    .btn {
+        @apply rounded-none;
+
+        &:first-child {
+            @apply rounded-l;
+        }
+        &:last-child {
+            @apply rounded-r;
+        }
+    }
+    
+    .btn {
+        @apply flex items-center justify-center text-base;
+    }
+}

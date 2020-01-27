@@ -1,0 +1,6 @@
+/* Container */
+@screen md {
+    .container {
+        max-width: theme('screens.md');
+    }
+}
