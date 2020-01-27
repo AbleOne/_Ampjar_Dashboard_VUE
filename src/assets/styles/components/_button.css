@@ -27,3 +27,19 @@
         @apply bg-blue-600 text-white;
     }
 }
+
+.btn-group {
+    label {
+        cursor: pointer;
+    }
+    
+    [type=radio] {
+        position: absolute;
+        clip: rect(0,0,0,0);
+        pointer-events: none;
+
+        &:checked + .card-highlight {
+            @apply bg-gray-300;
+        }
+    }
+}

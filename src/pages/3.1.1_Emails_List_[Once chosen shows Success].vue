@@ -62,28 +62,40 @@
 			</div>
 		</nav>
 		<div class="flex flex-col flex-grow xl:w-auto bg-gray-200 pt-20 sm:pt-0 sm:h-screen overflow-y-auto">
-            <div class="container mx-auto py-16 px-5">
-                <h1 class="text-center mb-4">Which subscriber list/s would you like to send your Ampjar emails to?</h1>
-                <p class="text-center mb-4">Your emails will be sent to all subscribers in each list.</p>
-                <form class="flex flex-col items-center mx-auto" action="">
-                    <label class="checkbox-label pr-3">
-						<input class="my-1 mr-3" type="checkbox">
-						<span class="text-sm">List 1 Name here</span>
-					</label>
-                    <label class="checkbox-label pr-3">
-						<input class="my-1 mr-3" type="checkbox">
-						<span class="text-sm">List 2 Name here</span>
-					</label>
-                    <label class="checkbox-label pr-3">
-						<input class="my-1 mr-3" type="checkbox">
-						<span class="text-sm">List 3 Name here</span>
-					</label>
-                    <label class="checkbox-label pr-3">
-						<input class="my-1 mr-3" type="checkbox">
-						<span class="text-sm">List 4 Name here</span>
-					</label>
-                    <button class="btn btn-primary mx-auto">Select Lists</button>
-                </form>
+            <div class="container flex flex-col  mx-auto py-16 px-5">
+                <div class="flex flex-col items-center">
+                    <h1 class="text-center mb-4">Which subscriber list/s would you like to send your Ampjar emails to?</h1>
+                    <p class="text-center">Your emails will be sent to all subscribers in each list.</p>
+                    <form action="">
+                        <div class="flex flex-col my-6">
+                            <div class="checkbox-custom">
+                                <input id="chck-list-1" type="checkbox">
+                                <label for="chck-list-1" class="checkbox-label">
+                                    List 1 Name here
+                                </label>
+                            </div>
+                            <div class="checkbox-custom">
+                                <input id="chck-list-2" type="checkbox">
+                                <label for="chck-list-2" class="checkbox-label">
+                                    List 2 Name here
+                                </label>
+                            </div>
+                            <div class="checkbox-custom">
+                                <input id="chck-list-3" type="checkbox">
+                                <label for="chck-list-3" class="checkbox-label">
+                                    List 3 Name here
+                                </label>
+                            </div>
+                            <div class="checkbox-custom">
+                                <input id="chck-list-4" type="checkbox">
+                                <label for="chck-list-4" class="checkbox-label">
+                                    List 4 Name here
+                                </label>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary mx-auto">Select Lists</button>
+                    </form>
+                </div>
             </div>
 		</div>
 	</div>

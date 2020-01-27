@@ -64,46 +64,25 @@
 		<div class="flex flex-col flex-grow xl:w-auto bg-gray-200 pt-20 sm:pt-0 sm:h-screen overflow-y-auto">
             <div class="container mx-auto py-16 px-5">
                 <div class="flex flex-wrap -mx-3">
-                    <div class="w-full md:w-1/3 px-3 mb-6">
+                    <div class="flex w-full md:w-1/3 px-3 mb-6 md:mb-0">
                         <div class="card">
-                            <h2>Boost Your Reach</h2>
+                            <h2>Set up Email</h2>
                             <p class="text-center mb-8">Explainer sentence goes here Explainer sentence goes here</p>
-                            <button class="btn">Set up</button>
+                            <button class="btn btn-primary">Set up</button>
                         </div>
                     </div>
-                    <div class="w-full md:w-1/3 px-3 mb-6">
+                    <div class="flex w-full md:w-1/3 px-3 mb-6 md:mb-0">
                         <div class="card">
-                            <h2>Social Shoutout</h2>
+                            <h2>Set up Snippets</h2>
                             <p class="text-center mb-8">Explainer sentence goes here Explainer sentence goes here</p>
-                            <button class="btn">Set up</button>
+                            <button class="btn btn-primary">Set up</button>
                         </div>
                     </div>
-                    <div class="w-full md:w-1/3 px-3 mb-6">
-                        <div class="card">
-                            <h2>Review Ads</h2>
-                            <p class="text-center mb-8">Explainer sentence goes here Explainer sentence goes here</p>
-                            <button class="btn">Set up</button>
-                        </div>
-                    </div>
-                    <div class="w-full md:w-1/3 px-3 mb-6">
-                        <div class="card">
-                            <h2>Review Matches</h2>
-                            <p class="text-center mb-8">Explainer sentence goes here Explainer sentence goes here</p>
-                            <button class="btn">Set up</button>
-                        </div>
-                    </div>
-                    <div class="w-full md:w-1/3 px-3 mb-6">
-                        <div class="card">
-                            <h2>View Report</h2>
-                            <p class="text-center mb-8">Explainer sentence goes here Explainer sentence goes here</p>
-                            <button class="btn">Set up</button>
-                        </div>
-                    </div>
-                    <div class="w-full md:w-1/3 px-3 mb-6">
+                    <div class="flex w-full md:w-1/3 px-3 mb-6 md:mb-0">
                         <div class="card">
                             <h2>Set up Billing</h2>
                             <p class="text-center mb-8">Explainer sentence goes here Explainer sentence goes here</p>
-                            <button class="btn">Set up</button>
+                            <button class="btn btn-primary">Set up</button>
                         </div>
                     </div>
                 </div>
