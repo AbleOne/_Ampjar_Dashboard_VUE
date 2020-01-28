@@ -1,4 +1,9 @@
 /* Nav Main */
+
+.nav-container  {
+    @apply z-40;
+}
+
 .nav-side-container {
     @apply flex-col flex-shrink-0 bg-white w-64 z-10 shadow-md;
 }

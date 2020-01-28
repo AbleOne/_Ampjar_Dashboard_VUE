@@ -16,3 +16,19 @@ hr {
     border-color: theme('colors.border_color');
     @apply my-8;
 }
+
+.dashboard {
+    @apply flex flex-grow min-h-screen bg-white overflow-hidden;
+}
+
+.main-content {
+    @apply flex flex-col flex-grow bg-gray-200 pt-20 overflow-y-auto relative;
+
+    @screen sm {
+        @apply h-screen pt-0;
+    }
+
+    @screen xl {
+        @apply w-auto;
+    }
+}

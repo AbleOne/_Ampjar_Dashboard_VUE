@@ -1,7 +1,7 @@
 /* Button */
 .btn {
     min-width: 140px;
-    @apply rounded text-sm whitespace-no-wrap py-2 px-4;
+    @apply rounded border text-sm whitespace-no-wrap py-2 px-4;
 }
 
 .btn-outline {
@@ -15,16 +15,16 @@
 }
 
 .btn-primary {
-    @apply bg-bright_blue text-white;
+    @apply bg-bright_blue border-bright_blue text-white;
 
     &.btn-outline {
-        @apply bg-transparent border-bright_blue text-bright_blue;
+        @apply bg-transparent text-bright_blue;
     }
 
     &:hover,
     &:focus,
     &:active {
-        @apply bg-blue-600 text-white;
+        @apply bg-dark_blue-active border-dark_blue-active text-white;
     }
 }
 

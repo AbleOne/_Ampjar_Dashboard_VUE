@@ -1,0 +1,32 @@
+/* Modal */
+
+.modal-shown {
+    .modal-backdrop {
+        display: flex;
+    }
+
+    .main-content {
+        @apply overflow-y-hidden;
+    }
+}
+
+.modal-backdrop {
+    @apply absolute inset-0 z-50 h-screen flex flex-col items-center justify-center p-5;
+    display: none;
+
+    @screen md {
+        @apply p-0;
+    }
+}
+
+.modal {
+    @apply inline-flex flex-col p-8 rounded-lg bg-white shadow-lg;
+    
+    @screen sm {
+        @apply max-w-md;
+    }
+
+    @screen lg {
+        @apply max-w-xl;
+    }
+}
