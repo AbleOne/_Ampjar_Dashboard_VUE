@@ -6,7 +6,18 @@ module.exports = {
       ...theme('colors'),
       default: theme('colors.gray.200', 'currentColor'),
     }),
-    
+    maxWidth: {
+      '3': '0.75rem',
+      '7': '1.75rem',
+      '22': '5.625rem',
+      '32': '8rem',
+      ...defaultTheme.maxWidth,
+    },
+    maxHeight: {
+      'none': 'none',
+      '56': '14rem',
+      ...defaultTheme.maxWidth,
+    },
     extend: {
       fontFamily: {
         sans: [
@@ -19,12 +30,8 @@ module.exports = {
         ...defaultTheme.inset,
       },
       colors: {
-        bright_blue: '#2983FF',
-        dark_blue: {
-          default: '#718096',
-          active: '#2B325B',
-        },
-        border_color: '#adb2ba'
+        ampjar_primary: '#2983ff',
+        ampjar_border: '#adb2ba'
       }
     },
   },

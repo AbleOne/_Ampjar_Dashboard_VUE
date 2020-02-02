@@ -1,17 +1,16 @@
 /* Modal */
 
 .modal-shown {
+    @apply overflow-y-hidden;
+
     .modal-backdrop {
         display: flex;
-    }
-
-    .main-content {
-        @apply overflow-y-hidden;
     }
 }
 
 .modal-backdrop {
     @apply absolute inset-0 z-50 h-screen flex flex-col items-center justify-center p-5;
+    background-color: rgba(0, 0, 0, .65);
     display: none;
 
     @screen md {
@@ -20,13 +19,38 @@
 }
 
 .modal {
-    @apply inline-flex flex-col p-8 rounded-lg bg-white shadow-lg;
+    @apply inline-flex flex-col rounded-lg bg-white shadow-lg relative p-8 max-w-full max-h-full;
     
     @screen sm {
-        @apply max-w-md;
+        @apply max-w-xl p-10;
+    }
+    
+    @screen md {
+        max-height: calc(100% - (theme('spacing.10')));
     }
 
     @screen lg {
-        @apply max-w-xl;
+        @apply max-w-3xl;
+    }
+
+    .modal-content {
+        @apply overflow-y-auto overflow-x-hidden;
+    }
+
+    .modal-close {
+        @apply flex justify-center w-4 h-4 absolute;
+        transform: translate(100%, -100%);
+        top: theme('spacing.8');
+        right:theme('spacing.8');
+
+        @screen sm {
+            top: theme('spacing.10');
+            right:theme('spacing.10');
+        }
+
+        img,
+        [role="img"] {
+            @apply w-full max-w-3;
+        }
     }
 }

@@ -1,23 +1,28 @@
 <template>
-  	<div class="dashboard  modal-shown">
+  	<div class="dashboard">
+        <div class="modal-backdrop">
+            <div class="modal">
+                <button class="modal-close">
+                    <svg aria-hidden="true" focusable="false" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z" class=""></path></svg>
+                </button>
+                <div class="modal-content">
+                    <h2 class="text-center mb-6">You’ve synced users using another ESP. Are you sure you don’t want to send your emails using this platform?</h2>
+                    <div class="flex flex-col md:flex-row justify-end">
+                        <button class="btn outline md:mr-3 mb-3 md:mb-0">No, I still want to use Ampjar</button>
+                        <button class="btn primary">Yes, choose ESP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 		<navigation/>
 		<main class="main-content">
-			<div class="modal-backdrop">
-				<div class="modal">
-					<h2 class="text-center mb-6">You’ve synced users using another ESP. Are you sure you don’t want to send your emails using this platform?</h2>
-					<div class="flex flex-col md:flex-row justify-end">
-						<button class="btn btn-outline md:mr-3 mb-3 md:mb-0">No, I still want to use Ampjar</button>
-						<button class="btn btn-primary">Yes, choose ESP</button>
-					</div>
-				</div>
-			</div>
 			<div class="container mx-auto py-16 px-5">
 				<h1 class="lg:text-center">Add Subscribers</h1>
 				<p class="lg:text-center mb-6">You can choose to send your email campaigns using your current Email Service Provider or through Ampjar. Either way we’ll help you build and style your campaigns in minutes.</p>
 				<h2>Import Subscribers</h2>
 				<div class="flex flex-wrap items-center justify-between">
 					<p class="sm:w-9/12 pr-3">If you have connected your preferred email service provider and sync your mailing list into Ampjar.</p>
-					<button class="btn btn-primary">Sync list</button>
+					<button class="btn primary">Sync list</button>
 				</div>
 				<hr>
 				<h2>Import from file</h2>
@@ -34,7 +39,7 @@
                                 By uploading this database I confirm that I have been given full and proper permission to contact this database for marketing purposes.
                             </label>
                         </div>
-                        <button class="btn btn-primary">Import list</button>
+                        <button class="btn primary">Import list</button>
                     </div>
 				</div>
 				<hr>
@@ -48,7 +53,7 @@
                             By uploading this database I confirm that I have been given full and proper permission to contact this database for marketing purposes.
                         </label>
                     </div>
-					<button class="btn btn-primary">Add subscribers</button>
+					<button class="btn primary">Add subscribers</button>
 				</div>
 				<hr>
 				<h2>Add a single subscriber</h2>
@@ -67,16 +72,19 @@
 							<input id="last-name" type="text">
 						</div>
 					</div>
-				</form>
-				<div class="flex flex-wrap items-center justify-between">
-                    <div class="checkbox-custom lg:mb-0 sm:w-9/12 flex pr-3">
-                        <input id="add-subscribers-permission" type="checkbox" checked>
-                        <label for="add-subscribers-permission" class="checkbox-label">
-                            I confirm that I have been given full and proper permission to contact this person for marketing purposes.
-                        </label>
+                    <div class="flex flex-wrap items-center justify-between">
+                        <div class="checkbox-custom lg:mb-0 sm:w-9/12 flex pr-3">
+                            <input id="add-subscribers-permission" type="checkbox" checked>
+                            <label for="add-subscribers-permission" class="checkbox-label">
+                                I confirm that I have been given full and proper permission to contact this person for marketing purposes.
+                            </label>
+                        </div>
+                        <button class="btn primary">Add subscriber</button>
                     </div>
-                    <button class="btn btn-primary">Add subscriber</button>
-				</div>
+				</form>
+                <div class="mt-16 lg:text-right">
+                    <button class="btn primary">Create my first email</button>
+                </div>
 			</div>
 		</main>
 	</div>

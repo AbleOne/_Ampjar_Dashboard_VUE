@@ -5,7 +5,7 @@ html {
 }
 
 a {
-    @apply text-bright_blue;
+    @apply text-ampjar_primary;
 }
 
 p:not(:last-child):not([class*=mb]) {
@@ -13,7 +13,7 @@ p:not(:last-child):not([class*=mb]) {
 }
 
 hr {
-    border-color: theme('colors.border_color');
+    border-color: theme('colors.ampjar_border');
     @apply my-8;
 }
 

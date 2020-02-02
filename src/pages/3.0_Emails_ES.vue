@@ -55,10 +55,10 @@
                         <p class="mb-4">Your Email Service Provider not yet available? Let us know your preferred platform below.</p>
                         <div class="form-inline flex mx-auto mb-6">
                             <input id="search-adv-matches" type="text" placeholder="Enter your ESP">
-                            <button class="btn btn-primary -ml-px">Submit</button>
+                            <button class="btn primary -ml-px">Submit</button>
                         </div>
                         <a href="#" class="text-gray-800 underline mb-6">I want to use Ampjar to send my emails</a>
-                        <button class="btn btn-primary">Connect ESP</button>
+                        <button class="btn primary">Connect ESP</button>
                     </div>
                 </form>
             </div>

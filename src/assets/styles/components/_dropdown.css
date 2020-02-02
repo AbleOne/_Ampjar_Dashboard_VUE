@@ -1,32 +1,31 @@
-/* DD menu */
-.dd {
+/* dropdown menu */
+.dropdown {
     @apply relative;
     
     * {
         @apply font-medium;
     }
     
-    &.dd-menu-right-top .dd-menu{
+    &.dropdown-menu-right-top .dropdown-menu{
         @apply top-100 right-0;
     }
     
-    &.dd-menu-right-bottom .dd-menu{
+    &.dropdown-menu-right-bottom .dropdown-menu{
         @apply bottom-0 right-0;
     }
 }
 
-.dd-menu {
+.dropdown-menu {
     @apply absolute bg-white shadow p-3; 
 }
 
 
-.dd-menu-item {
-    @apply p-1 flex whitespace-no-wrap;
-    color: theme('colors.dark_blue.default'); 
+.dropdown-menu-item {
+    @apply text-gray-600 p-1 flex whitespace-no-wrap;
     
     &:hover,
     &:focus,
     &:active {
-        color: theme('colors.dark_blue.active');
+        @apply text-gray-800;
     }
 }

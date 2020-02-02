@@ -1,0 +1,13 @@
+/* Pagination */
+
+.pagination {
+    @apply flex justify-end items-center my-6;
+
+    span {
+        @apply text-gray-500 px-4;
+    }
+
+    .btn {
+        @apply min-w-0 text-xs p-1 w-full max-w-7;
+    }
+}

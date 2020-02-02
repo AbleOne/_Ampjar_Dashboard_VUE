@@ -34,12 +34,12 @@
     }
 }
 
-.dd-menu--nav-item {
-    /* @apply dd-menu-item overflow-hidden; */
+.dropdown-menu--nav-item {
+    /* @apply dropdown-menu-item overflow-hidden; */
     padding-left: calc(theme('spacing.8') + theme('spacing.5'));
 
     &:hover {
-        color: theme('colors.dark_blue.active');
+        @apply text-gray-800;
     }
 }
 
@@ -73,7 +73,7 @@
         left: calc(100% + theme('spacing.1'));
         top: 50%;
         transform: translateY(-50%);
-        @apply rounded text-white bg-bright_blue whitespace-no-wrap absolute w-0 h-0 px-2 py-1 invisible;
+        @apply rounded text-white bg-ampjar_primary whitespace-no-wrap absolute w-0 h-0 px-2 py-1 invisible;
     }
     
     a:hover span,
@@ -81,7 +81,7 @@
         @apply w-auto h-auto visible;
     }
     
-    [class*=dd-menu] {
+    [class*=dropdown-menu] {
         display: none;
     }
     

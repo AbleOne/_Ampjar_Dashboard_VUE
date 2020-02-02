@@ -1,11 +1,84 @@
-<template>
+    <template>
   	<div class="dashboard">
+        <div class="modal-backdrop">
+            <div class="modal">
+                <button class="modal-close">
+                    <svg aria-hidden="true" focusable="false" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z" class=""></path></svg>
+                </button>
+                <div class="modal-content">
+                    <div class="flex flex-wrap -mx-4">
+                        <div class="w-full lg:w-1/2 px-4">
+                            <div class="card-sm mt-6">
+                                <div class="bg-gray-100 w-full p-3">
+                                    <div class="flex -mt-10 justify-between items-end pb-3">
+                                        <img src="img/littleprintables.jpg" alt="littleprintables" class="rounded-full border max-w-2xl">
+                                    </div>
+                                    <a class="text-xs" href="#">@littleprintables</a>
+                                    <div class="flex justify-between">
+                                        <strong>Little Printables</strong>
+                                    </div>
+                                </div>
+                                <div class="w-full p-3">
+                                    <strong class="text-xs">Bio</strong>
+                                    <p>Bio goes here</p>
+                                    <strong class="text-xs">Website</strong>
+                                    <p class="break-words">www.website.com</p>
+                                    <strong class="text-xs">Instagram</strong>
+                                    <p class="break-words">https://www.instagram.com/littleprintables</p>
+                                    <strong class="text-xs">Reach</strong>
+                                    <p>7500 subscribers</p>
+                                    <strong class="text-xs">Engagement</strong>
+                                    <div class="flex flex-wrap">
+                                        <p class="w-full sm:w-1/2"></p>
+                                        <p class="w-full sm:w-1/2">Very good</p>
+                                        <p class="w-full sm:w-1/2">Open rate: 20%</p>
+                                        <p class="w-full sm:w-1/2 mb-3">Click rate: 1%</p>
+                                    </div>
+                                    <strong class="text-xs">Shoutout Placement cost</strong>
+                                    <p>50 Ampcredits</p>
+                                    <!-- <strong class="text-xs">Website</strong>
+                                    <p>www.website.com</p>
+                                    <strong class="text-xs">Website</strong>
+                                    <a href="https://www.instagram.com/littleprintables">https://www.instagram.com/littleprintables</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full lg:w-1/2 px-4 mt-3">
+                            <div class="flex flex-wrap sm:flex-no-wrap items-center mb-5 ">
+                                <img class="self-center max-w-22 mr-8 my-3" src="https://via.placeholder.com/90?text=Preview_1" alt="Shoutout Preview 1">
+                                <div class="flex flex-col w-full text-xs">
+                                    <strong>Email Subject</strong>
+                                    <p>Sent 4 days ago</p>
+                                    <button class="btn outline primary w-auto sm:w-full">Preview</button>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap sm:flex-no-wrap items-center mb-5 ">
+                                <img class="self-center max-w-22 mr-8 my-3" src="https://via.placeholder.com/90?text=Preview_2" alt="Shoutout Preview 2">
+                                <div class="flex flex-col w-full text-xs">
+                                    <strong>Email Subject</strong>
+                                    <p>Sent 4 days ago</p>
+                                    <button class="btn outline primary w-auto sm:w-full">Preview</button>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap sm:flex-no-wrap items-center ">
+                                <img class="self-center max-w-22 mr-8 my-3" src="https://via.placeholder.com/90?text=Preview_3" alt="Shoutout Preview 3">
+                                <div class="flex flex-col w-full text-xs">
+                                    <strong>Email Subject</strong>
+                                    <p>Sent 4 days ago</p>
+                                    <button class="btn outline primary w-auto sm:w-full">Preview</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 		<navigation/>
 		<main class="main-content">
             <div class="container mx-auto py-16 px-5">
                 <h1 class="mb-4">Advertising Matches</h1>
-                <p class="mb-4">These are the brands who will shout you out to their customers. When we have created these matches for you we have done so based on customer profiling so you are talking to your dream customers. You can remove matches and add new ones at any time.</p>
-                <div class="bg-white border border-gray-300 rounded px-16 pt-8 pb-4">
+                <p class="mb-4">These are the brands who will shout you out to their customers. When we have created these matches for you we have done so based on customer profiling so you are talking to your dream customers. You can remove matches and adropdown new ones at any time.</p>
+                <div class="bg-white border border-gray-300 rounded px-8 sm:px-16 pt-8 pb-4">
                     <div class="flex flex-wrap -mx-3">
                         <div class="w-full md:w-1/2 lg:w-1/3 px-3 mb-6">
                             <div class="card-sm mt-6">
@@ -17,12 +90,12 @@
                                     <a class="text-xs" href="#">@littleprintables</a>
                                     <div class="flex justify-between">
                                         <h3>Little Printables</h3>
-                                        <div class="dd dd-menu-right-top">
-                                            <button><img src="img/dd.svg" alt="dd arrow" /></button>
-                                            <div class="dd-menu">
-                                                <a class="dd-menu-item" href="#">Unmatch for now</a>
-                                                <a class="dd-menu-item" href="#">Unmatch forever</a>
-                                                <a class="dd-menu-item" href="#">View Profile</a>
+                                        <div class="dropdown dropdown-menu-right-top">
+                                            <button><img src="img/dropdown.svg" alt="dropdown arrow" /></button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-menu-item" href="#">Unmatch for now</a>
+                                                <a class="dropdown-menu-item" href="#">Unmatch forever</a>
+                                                <a class="dropdown-menu-item" href="#">View Profile</a>
                                             </div>
                                         </div>
                                     </div>
@@ -45,12 +118,12 @@
                                     <a class="text-xs" href="#">@littleprintables</a>
                                     <div class="flex justify-between">
                                         <h3>Little Printables</h3>
-                                        <div class="dd dd-menu-right-top">
-                                            <button><img src="img/dd.svg" alt="dd arrow" /></button>
-                                            <div class="dd-menu hidden">
-                                                <a class="dd-menu-item" href="#">Unmatch for now</a>
-                                                <a class="dd-menu-item" href="#">Unmatch forever</a>
-                                                <a class="dd-menu-item" href="#">View Profile</a>
+                                        <div class="dropdown dropdown-menu-right-top">
+                                            <button><img src="img/dropdown.svg" alt="dropdown arrow" /></button>
+                                            <div class="dropdown-menu hidden">
+                                                <a class="dropdown-menu-item" href="#">Unmatch for now</a>
+                                                <a class="dropdown-menu-item" href="#">Unmatch forever</a>
+                                                <a class="dropdown-menu-item" href="#">View Profile</a>
                                             </div>
                                         </div>
                                     </div>
@@ -73,12 +146,12 @@
                                     <a class="text-xs" href="#">@littleprintables</a>
                                     <div class="flex justify-between">
                                         <h3>Little Printables</h3>
-                                        <div class="dd dd-menu-right-top">
-                                            <button><img src="img/dd.svg" alt="dd arrow" /></button>
-                                            <div class="dd-menu hidden">
-                                                <a class="dd-menu-item" href="#">Unmatch for now</a>
-                                                <a class="dd-menu-item" href="#">Unmatch forever</a>
-                                                <a class="dd-menu-item" href="#">View Profile</a>
+                                        <div class="dropdown dropdown-menu-right-top">
+                                            <button><img src="img/dropdown.svg" alt="dropdown arrow" /></button>
+                                            <div class="dropdown-menu hidden">
+                                                <a class="dropdown-menu-item" href="#">Unmatch for now</a>
+                                                <a class="dropdown-menu-item" href="#">Unmatch forever</a>
+                                                <a class="dropdown-menu-item" href="#">View Profile</a>
                                             </div>
                                         </div>
                                     </div>
@@ -99,7 +172,7 @@
                     <div class="flex flex-wrap -mx-3 mb-6">
                         <div class="form-inline flex w-full lg:w-3/4 px-3 mb-6 lg:mb-0">
                             <input id="search-adv-matches" type="text" placeholder="Search">
-                            <button class="btn btn-outline -ml-px">Search</button>
+                            <button class="btn outline -ml-px">Search</button>
                         </div>
                         <div class="w-full lg:w-1/4 px-3 mb-6 lg:mb-0">
                             <div class="relative">
@@ -125,12 +198,12 @@
                                     <a class="text-xs" href="#">@littleprintables</a>
                                     <div class="flex justify-between">
                                         <h3>Little Printables</h3>
-                                        <div class="dd dd-menu-right-top ">
-                                            <button><img src="img/dd.svg" alt="dd arrow" /></button>
-                                            <div class="dd-menu">
-                                                <a class="dd-menu-item" href="#">Request to Advertise with</a>
-                                                <a class="dd-menu-item" href="#">Request to Advertise with &amp; Host</a>
-                                                <a class="dd-menu-item" href="#">Cancel Request</a>
+                                        <div class="dropdown dropdown-menu-right-top ">
+                                            <button><img src="img/dropdown.svg" alt="dropdown arrow" /></button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-menu-item" href="#">Request to Advertise with</a>
+                                                <a class="dropdown-menu-item" href="#">Request to Advertise with &amp; Host</a>
+                                                <a class="dropdown-menu-item" href="#">Cancel Request</a>
                                             </div>
                                         </div>
                                     </div>
@@ -153,12 +226,12 @@
                                     <a class="text-xs" href="#">@littleprintables</a>
                                     <div class="flex justify-between">
                                         <h3>Little Printables</h3>
-                                        <div class="dd dd-menu-right-top">
-                                            <button><img src="img/dd.svg" alt="dd arrow" /></button>
-                                            <div class="dd-menu hidden">
-                                                <a class="dd-menu-item" href="#">Unmatch for now</a>
-                                                <a class="dd-menu-item" href="#">Unmatch forever</a>
-                                                <a class="dd-menu-item" href="#">View Profile</a>
+                                        <div class="dropdown dropdown-menu-right-top">
+                                            <button><img src="img/dropdown.svg" alt="dropdown arrow" /></button>
+                                            <div class="dropdown-menu hidden">
+                                                <a class="dropdown-menu-item" href="#">Unmatch for now</a>
+                                                <a class="dropdown-menu-item" href="#">Unmatch forever</a>
+                                                <a class="dropdown-menu-item" href="#">View Profile</a>
                                             </div>
                                         </div>
                                     </div>
@@ -180,12 +253,12 @@
                                     <a class="text-xs" href="#">@littleprintables</a>
                                     <div class="flex justify-between">
                                         <h3>Little Printables</h3>
-                                        <div class="dd dd-menu-right-top">
-                                            <button><img src="img/dd.svg" alt="dd arrow" /></button>
-                                            <div class="dd-menu hidden">
-                                                <a class="dd-menu-item" href="#">Unmatch for now</a>
-                                                <a class="dd-menu-item" href="#">Unmatch forever</a>
-                                                <a class="dd-menu-item" href="#">View Profile</a>
+                                        <div class="dropdown dropdown-menu-right-top">
+                                            <button><img src="img/dropdown.svg" alt="dropdown arrow" /></button>
+                                            <div class="dropdown-menu hidden">
+                                                <a class="dropdown-menu-item" href="#">Unmatch for now</a>
+                                                <a class="dropdown-menu-item" href="#">Unmatch forever</a>
+                                                <a class="dropdown-menu-item" href="#">View Profile</a>
                                             </div>
                                         </div>
                                     </div>
@@ -198,6 +271,12 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="pagination">
+                        <span>Page</span>
+                        <button class="btn primary">1</button>
+                        <span>...</span>
+                        <button class="btn outline">5</button>
                     </div>
                 </div>
             </div>

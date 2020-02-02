@@ -1,30 +1,30 @@
 /* Button */
 .btn {
     min-width: 140px;
-    @apply rounded border text-sm whitespace-no-wrap py-2 px-4;
-}
-
-.btn-outline {
-    @apply border bg-transparent border-gray-500  text-black;
-
-    &:hover,
-    &:focus,
-    &:active {
-        @apply bg-gray-900 border-gray-900 text-white;
+    @apply rounded border text-sm whitespace-no-wrap text-black bg-gray-300 border border-gray-300 py-2 px-4;
+    
+    &.outline {
+        @apply border bg-transparent border-ampjar_border text-black;
+    
+        &:hover,
+        &:focus,
+        &:active {
+            @apply bg-gray-900 border-gray-900 text-white;
+        }
     }
-}
-
-.btn-primary {
-    @apply bg-bright_blue border-bright_blue text-white;
-
-    &.btn-outline {
-        @apply bg-transparent text-bright_blue;
-    }
-
-    &:hover,
-    &:focus,
-    &:active {
-        @apply bg-dark_blue-active border-dark_blue-active text-white;
+    
+    &.primary {
+        @apply bg-ampjar_primary border-ampjar_primary text-white;
+    
+        &.outline {
+            @apply bg-transparent text-ampjar_primary border-ampjar_primary;
+        }
+    
+        &:hover,
+        &:focus,
+        &:active {
+            @apply bg-blue-800 border-blue-800 text-white;
+        }
     }
 }
 

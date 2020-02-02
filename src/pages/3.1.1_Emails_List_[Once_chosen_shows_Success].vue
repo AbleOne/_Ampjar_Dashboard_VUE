@@ -33,7 +33,7 @@
                                 </label>
                             </div>
                         </div>
-                        <button class="btn btn-primary mx-auto">Select Lists</button>
+                        <button class="btn primary mx-auto">Select Lists</button>
                     </form>
                 </div>
             </div>
