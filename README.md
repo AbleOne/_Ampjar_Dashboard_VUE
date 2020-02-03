@@ -14,23 +14,20 @@ npm run build
 ```
 
 ## Markup CSS class Modifiers:
-`<body>`:  
-    `.modal-shown`  
+element : `<body>`  
+modilfier : `.modal-shown`  
   
-`nav.nav-side-container`:  
-    `.collapsed`  
-    `.hiddem`  
+element : `nav.nav-side-container`  
+modilfiers : `.collapsed`, `.hidden`  
   
-`div.dropdown`:  
-    `.dd-menu-right-top`  
-    `.dropdown-menu-right-bottom`  
+element : `div.dropdown`  
+modilfiers : `.dd-menu-right-top`, `.dropdown-menu-right-bottom`  
   
-`div.dropdown.dropdown-menu`:  
-    `.hidden`  
+element : `div.dropdown.dropdown-menu`  
+modilfier : `.hidden`  
   
-`.btn`: 
-    `.outline`  
-    `.primary`  
+element : `.btn`  
+modilfier : `.outline`, `.primary`  
   
-`btn.primary`  
-    `.outline`
+element : `btn.primary`  
+modilfier : `.outline`  
