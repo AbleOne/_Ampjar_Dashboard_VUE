@@ -18,6 +18,14 @@ module.exports = {
       '56': '14rem',
       ...defaultTheme.maxWidth,
     },
+    fontSize: {
+      'xxs': '0.688em',
+      ...defaultTheme.fontSize,
+    },
+    opacity: {
+      '65': '0.65',
+      ...defaultTheme.opacity,
+    },
     extend: {
       fontFamily: {
         sans: [

@@ -16,40 +16,40 @@
                     </form>
                     <p>Upload an image from Instagram</p>
                     <div class="flex flex-wrap -mx-1">
-                        <div class="w-1/2 sm:w-1/3 px-1">
+                        <div class="w-1/2 sm:w-1/3 lg:w-1/4 px-1">
                             <div class="p-2 bg-gray-100">
                                 <img class="w-full h-full object-cover" src="https://via.placeholder.com/140?text=Pic_1" alt="Pic 1">
                             </div>
                         </div>
-                        <div class="w-1/2 sm:w-1/3 px-1">
+                        <div class="w-1/2 sm:w-1/3 lg:w-1/4 px-1">
                             <div class="p-2">
                                 <img class="w-full h-full object-cover" src="https://via.placeholder.com/140?text=Pic_2" alt="Pic 2">
                             </div>
                         </div>
-                        <div class="w-1/2 sm:w-1/3 px-1">
+                        <div class="w-1/2 sm:w-1/3 lg:w-1/4 px-1">
                             <div class="p-2">
                                 <img class="w-full h-full object-cover" src="https://via.placeholder.com/140?text=Pic_3" alt="Pic 3">
                             </div>
                         </div>
-                        <div class="w-1/2 sm:w-1/3 px-1">
+                        <div class="w-1/2 sm:w-1/3 lg:w-1/4 px-1">
                             <div class="p-2">
                                 <img class="w-full h-full object-cover" src="https://via.placeholder.com/140?text=Pic_4" alt="Pic 4">
                             </div>
                         </div>
-                        <div class="w-1/2 sm:w-1/3 px-1">
+                        <div class="w-1/2 sm:w-1/3 lg:w-1/4 px-1">
                             <div class="p-2">
                                 <img class="w-full h-full object-cover" src="https://via.placeholder.com/140?text=Pic_5" alt="Pic 5">
                             </div>
                         </div>
-                        <div class="w-1/2 sm:w-1/3 px-1">
+                        <div class="w-1/2 sm:w-1/3 lg:w-1/4 px-1">
                             <div class="p-2">
                                 <img class="w-full h-full object-cover" src="https://via.placeholder.com/140?text=Pic_6" alt="Pic 6">
                             </div>
                         </div>
                     </div>
-                    <div class="flex justify-end items-center mt-6">
-                        <button class="btn outline min-w-0 mx-2" disabled>Previous</button>
-                        <button class="btn outline min-w-0 mx-2" disabled>Next</button>
+                    <div class="flex justify-center sm:justify-end items-center mt-6 mx-2">
+                        <button class="btn primary min-w-0 mr-3" disabled>Previous</button>
+                        <button class="btn primary min-w-0">Next</button>
                     </div>
                 </div>
             </div>
@@ -86,7 +86,7 @@
                                     </div>
                                 </div>
                                 <div class="border-t lg:border-t-0 text-right w-full lg:w-4/12 mt-4 lg:mt-0 pt-4 lg:pt-0">
-                                    <a class="px-4 py-2" href="#">Perview</a>
+                                    <button class="btn min-w-0 mr-3">Perview</button>
                                     <button class="btn primary min-w-0">Edit</button>
                                 </div>
                             </div>
@@ -115,7 +115,7 @@
                                     </div>
                                 </div>
                                 <div class="border-t lg:border-t-0 text-right w-full lg:w-4/12 mt-4 lg:mt-0 pt-4 lg:pt-0">
-                                    <a class="px-4 py-2" href="#">Perview</a>
+                                    <button class="btn min-w-0 mr-3">Perview</button>
                                     <button class="btn primary min-w-0">Edit</button>
                                 </div>
                             </div>
@@ -144,7 +144,7 @@
                                     </div>
                                 </div>
                                 <div class="border-t lg:border-t-0 text-right w-full lg:w-4/12 mt-4 lg:mt-0 pt-4 lg:pt-0">
-                                    <a class="px-4 py-2" href="#">Perview</a>
+                                    <button class="btn min-w-0 mr-3">Perview</button>
                                     <button class="btn primary min-w-0">Edit</button>
                                 </div>
                             </div>
@@ -176,7 +176,7 @@
                                     </div>
                                 </div>
                                 <div class="border-t lg:border-t-0 text-right w-full lg:w-4/12 mt-4 lg:mt-0 pt-4 lg:pt-0">
-                                    <a class="px-4 py-2" href="#">Perview</a>
+                                    <button class="btn min-w-0 mr-3">Perview</button>
                                     <button class="btn primary min-w-0">Edit</button>
                                 </div>
                             </div>

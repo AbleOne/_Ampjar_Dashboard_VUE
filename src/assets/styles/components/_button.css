@@ -1,7 +1,17 @@
 /* Button */
 .btn {
     min-width: 140px;
-    @apply rounded border text-sm whitespace-no-wrap text-black bg-gray-300 border border-gray-300 py-2 px-4;
+    @apply rounded border text-sm whitespace-no-wrap text-black bg-gray-300 border border-gray-400 py-2 px-4;
+
+    &:disabled {
+        @apply opacity-65;
+    }
+
+    &:disabled:hover,
+    &:disabled:focus,
+    &:disabled:active {
+        @apply text-black bg-gray-300 border-gray-300;
+    }
     
     &.outline {
         @apply border bg-transparent border-ampjar_border text-black;
@@ -11,6 +21,12 @@
         &:active {
             @apply bg-gray-900 border-gray-900 text-white;
         }
+
+        &:disabled:hover,
+        &:disabled:focus,
+        &:disabled:active {
+            @apply bg-transparent border-ampjar_border text-black;
+        }
     }
     
     &.primary {
@@ -18,12 +34,24 @@
     
         &.outline {
             @apply bg-transparent text-ampjar_primary border-ampjar_primary;
+
+            &:disabled:hover,
+            &:disabled:focus,
+            &:disabled:active {
+                @apply bg-transparent text-ampjar_primary border-ampjar_primary;
+            }
         }
     
         &:hover,
         &:focus,
         &:active {
             @apply bg-blue-800 border-blue-800 text-white;
+        }
+
+        &:disabled:hover,
+        &:disabled:focus,
+        &:disabled:active {
+            @apply bg-ampjar_primary border-ampjar_primary text-white;
         }
     }
 }
