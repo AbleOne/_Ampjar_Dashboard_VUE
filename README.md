@@ -32,5 +32,5 @@ modilfier : `.outline`, `.primary`
 element : `btn.primary`  
 modilfier : `.outline`  
 
-element : `.accordion-item`
+element : `.accordion-item`  
 modifier : `.collapsed`
