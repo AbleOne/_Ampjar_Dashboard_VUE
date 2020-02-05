@@ -17,6 +17,14 @@ hr {
     @apply my-8;
 }
 
+pre {
+    @apply max-w-full overflow-x-auto;
+}
+
+code {
+    @apply text-sm;
+}
+
 .dashboard {
     @apply flex flex-grow min-h-screen bg-white overflow-hidden;
 }

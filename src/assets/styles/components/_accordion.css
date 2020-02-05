@@ -1,0 +1,38 @@
+/* Accordion */
+
+.accordion {
+    @apply my-6;
+}
+
+.accordion-item {
+    @apply border-b border-ampjar_border py-2;
+
+    img[src*=plus] {
+        @apply hidden;
+    }
+
+    &.collapsed {
+
+        img[src*=accordion-plus] {
+            @apply block;
+        }
+        
+        img[src*=accordion-minus] {
+            @apply hidden;
+        }
+
+        .accordion-item-content {
+            @apply hidden;
+        }
+    }
+    
+}
+
+.accordion-item-btn {
+    @apply flex items-center w-full py-2;
+    
+    img[src*=plus],
+    img[src*=minus] {
+        @apply mr-3;
+    }
+}

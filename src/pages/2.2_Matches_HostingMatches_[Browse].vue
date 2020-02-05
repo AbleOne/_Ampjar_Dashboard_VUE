@@ -58,7 +58,7 @@
                                 <div class="bg-gray-100 w-full p-3">
                                     <div class="flex -mt-10 justify-between items-end pb-3">
                                         <img src="img/littleprintables.jpg" alt="littleprintables" class="rounded-full border max-w-2xl">
-                                        <span class="card-label  bg-blue-500 text-white">Matched</span>
+                                        <span class="card-label  bg-ampjar_primary text-white">Matched</span>
                                     </div>
                                     <a class="text-xs" href="#">@littleprintables</a>
                                     <div class="flex justify-between">
@@ -80,7 +80,7 @@
                                 <div class="bg-gray-100 w-full p-3">
                                     <div class="flex -mt-10 justify-between items-end pb-3">
                                         <img src="img/littleprintables.jpg" alt="littleprintables" class="rounded-full border max-w-2xl">
-                                        <span class="card-label  bg-blue-500 text-white">Unmatched</span>
+                                        <span class="card-label  bg-ampjar_primary text-white">Unmatched</span>
                                     </div>
                                     <a class="text-xs" href="#">@littleprintables</a>
                                     <div class="flex justify-between">
@@ -102,7 +102,7 @@
                                 <div class="bg-gray-100 w-full p-3">
                                     <div class="flex -mt-10 justify-between items-end pb-3">
                                         <img src="img/littleprintables.jpg" alt="littleprintables" class="rounded-full border max-w-2xl">
-                                        <span class="card-label  bg-blue-500 text-white">Matched</span>
+                                        <span class="card-label  bg-ampjar_primary text-white">Matched</span>
                                     </div>
                                     <a class="text-xs" href="#">@littleprintables</a>
                                     <div class="flex justify-between">

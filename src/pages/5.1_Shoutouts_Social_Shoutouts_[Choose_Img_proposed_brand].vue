@@ -9,13 +9,14 @@
                     <p>You are browsing available images from the same brand.</p>
                     <div class="flex flex-wrap -mx-1 my-6">
                         <div class="w-full sm:w-1/2 md:w-1/3 px-1">
-                            <div class="p-2 bg-gray-100">
-                                <img class  ="w-full h-full object-cover" src="https://via.placeholder.com/220x250?text=Pic_1" alt="Pic 1">
+                            <div class="p-2">
+                                <img class="w-full h-full object-cover" src="https://via.placeholder.com/220x250?text=Pic_1" alt="Pic 1">
                             </div>
                         </div>
                         <div class="w-full sm:w-1/2 md:w-1/3 px-1">
-                            <div class="p-2">
-                                <img class="w-full h-full object-cover" src="https://via.placeholder.com/220x250?text=Pic_2" alt="Pic 2">
+                            <div class="p-2 bg-gray-100 relative">
+                                <span class="card-label bg-ampjar_primary text-white absolute top-0 right-0 -mt-1 mr-5">Recommended</span>
+                                <img class  ="w-full h-full object-cover" src="https://via.placeholder.com/220x250?text=Pic_2" alt="Pic 2">
                             </div>
                         </div>
                         <div class="w-full sm:w-1/2 md:w-1/3 px-1">

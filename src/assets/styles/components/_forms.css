@@ -3,7 +3,15 @@
 input:not([type=checkbox]):not([type=radio]),
 select,
 textarea {
-    @apply appearance-none block w-full bg-white text-sm text-gray-700 border border-ampjar_border rounded py-3 px-4 leading-tight;
+    @apply appearance-none block text-sm text-gray-700 border border-ampjar_border rounded py-3 px-4 leading-tight;
+
+    &:not(.w-auto) {
+        @apply w-full;
+    }
+
+    &:not([class*="bg-"]) {
+        @apply bg-white; 
+    }
     
     &:focus {
         @apply outline-none bg-gray-100 border-gray-500;

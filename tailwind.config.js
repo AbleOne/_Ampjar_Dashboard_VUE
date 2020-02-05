@@ -6,6 +6,10 @@ module.exports = {
       ...theme('colors'),
       default: theme('colors.gray.200', 'currentColor'),
     }),
+    minWidth: {
+      '24': '6rem',
+      ...defaultTheme.minWidth,
+    },
     maxWidth: {
       '3': '0.75rem',
       '7': '1.75rem',

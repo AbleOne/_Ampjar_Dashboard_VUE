@@ -15,7 +15,8 @@
         }
     }
 
-    .card-label {
-        @apply mb-3 rounded  px-2 py-1  text-xs flex-grow-0;
-    }
+}
+
+.card-label {
+    @apply mb-3 rounded  px-2 py-1  text-xs flex-grow-0;
 }

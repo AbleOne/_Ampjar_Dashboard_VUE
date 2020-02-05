@@ -19,7 +19,7 @@
 }
 
 .modal {
-    @apply inline-flex flex-col rounded-lg bg-white shadow-lg relative p-8 max-w-full max-h-full;
+    @apply inline-flex flex-col rounded-lg bg-white shadow-lg relative p-8 w-full max-w-full max-h-full;
     
     @screen sm {
         @apply max-w-xl p-10;
