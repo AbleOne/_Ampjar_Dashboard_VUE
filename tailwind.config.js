@@ -2,35 +2,35 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   theme: {
-    borderColor: theme => ({
-      ...theme('colors'),
-      default: theme('colors.gray.200', 'currentColor'),
-    }),
-    minWidth: {
-      '24': '6rem',
-      ...defaultTheme.minWidth,
-    },
-    maxWidth: {
-      '3': '0.75rem',
-      '7': '1.75rem',
-      '22': '5.625rem',
-      '32': '8rem',
-      ...defaultTheme.maxWidth,
-    },
-    maxHeight: {
-      'none': 'none',
-      '56': '14rem',
-      ...defaultTheme.maxWidth,
-    },
-    fontSize: {
-      'xxs': '0.688em',
-      ...defaultTheme.fontSize,
-    },
-    opacity: {
-      '65': '0.65',
-      ...defaultTheme.opacity,
-    },
     extend: {
+      borderColor: theme => ({
+        ...theme('colors'),
+        default: theme('colors.gray.200', 'currentColor'),
+      }),
+      minWidth: {
+        '24': '6rem',
+        ...defaultTheme.minWidth,
+      },
+      maxWidth: {
+        '3': '0.75rem',
+        '7': '1.75rem',
+        '22': '5.625rem',
+        '32': '8rem',
+        ...defaultTheme.maxWidth,
+      },
+      maxHeight: {
+        'none': 'none',
+        '56': '14rem',
+        ...defaultTheme.maxWidth,
+      },
+      fontSize: {
+        'xxs': '0.688em',
+        ...defaultTheme.fontSize,
+      },
+      opacity: {
+        '65': '0.65',
+        ...defaultTheme.opacity,
+      },
       fontFamily: {
         sans: [
           'Nunito',
