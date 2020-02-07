@@ -33,7 +33,7 @@ code {
     @apply flex flex-col flex-grow bg-gray-200 pt-20 overflow-y-auto relative;
 
     @screen sm {
-        @apply h-screen pt-0;
+        @apply min-h-screen pt-0; /* h-screen */
     }
 
     @screen xl {

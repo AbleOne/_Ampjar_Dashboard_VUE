@@ -35,10 +35,6 @@
                                         <input type="date" name="shoutout-expiry" id="shoutout-expiry" value="2020-03-03">
                                     </div>
                                 </div>
-                                <!-- <div class="border-t lg:border-t-0 text-right w-full lg:w-4/12 mt-4 lg:mt-0 pt-4 lg:pt-0">
-                                    <a class="px-4 py-2" href="#">Cancel</a>
-                                    <button type="submit" class="btn primary min-w-0">Save</button>
-                                </div> -->
                                 <div class="flex flex-col md:flex-row justify-end border-t md:border-t-0 pt-6 md:pt-0">
                                     <button class="btn md:mr-3 mb-3 md:mb-0">Cancel</button>
                                     <button type="submit" class="btn primary">Save</button>

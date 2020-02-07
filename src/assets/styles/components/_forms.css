@@ -26,12 +26,18 @@ textarea {
     padding-left: 1.5rem;
 
     [type=checkbox]{
+        /* z-index: -1; */
         position: absolute;
-        z-index: -1;
+        left: 0;
+        top: 0;
         opacity: 0;
+        width: 1rem;
+        height: 1.25rem;
+        overflow: visible;
+
         
         & ~ .checkbox-label {
-            @apply text-sm mb-0 relative inline-block; 
+            @apply text-sm font-normal mb-0 relative inline-block; 
         }
 
         & ~ .checkbox-label:before,
@@ -129,6 +135,37 @@ textarea {
     border-right: inherit;
     @apply rounded inset-y-0 left-0 absolute block;
 }
+
+/* input checkbox btn */
+
+.checkbox-button {
+    @apply relative flex font-normal; /* mx-1 mb-2 */
+    font-size: inherit;
+    
+    .btn {
+        @apply flex items-center justify-center min-w-full;
+        font-size: inherit;
+
+        &.wrapped {
+            @apply whitespace-normal;
+        }
+
+        &:hover {
+            background-color: theme('colors.ampjar_primary')ba;
+            border-color: theme('colors.ampjar_primary');
+        }
+    }
+
+    [type=checkbox] {
+        @apply absolute opacity-0;
+
+        &:checked ~ .btn {
+            @apply bg-ampjar_primary border-ampjar_primary text-white;
+        }
+    }
+
+}
+
 
 textarea {
     resize: vertical;
