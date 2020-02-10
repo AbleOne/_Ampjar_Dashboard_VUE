@@ -256,7 +256,7 @@ input[type=range] {
 /* input checkbox btn */
 
 .checkbox-button {
-    @apply relative flex font-normal; /* mx-1 mb-2 */
+    @apply relative flex font-normal;
     font-size: inherit;
     
     .btn {
@@ -276,8 +276,13 @@ input[type=range] {
     [type=checkbox] {
         @apply absolute opacity-0;
 
+        &:checked:focus ~ .btn,
         &:checked ~ .btn {
             @apply bg-ampjar_primary border-ampjar_primary text-white;
+        }
+
+        &:focus ~ .btn {
+            @apply bg-transparent border-ampjar_border text-black;
         }
     }
 

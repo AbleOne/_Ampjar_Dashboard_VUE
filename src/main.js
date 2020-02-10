@@ -9,20 +9,6 @@ import 'nouislider/distribute/nouislider.min.css'
 Vue.config.productionTip = false;
 
 document.addEventListener("DOMContentLoaded", function(event) {
-  //   Input range : Native (+ css-vars)
-  //
-  //   document.documentElement.classList.add('js-range');
-
-  //   const _R = document.querySelector('[type=range]');
-    
-  //   _R.style.setProperty('--levels', (_R.getAttribute('max') - _R.getAttribute('min')) / _R.getAttribute('step'));
-  //   _R.style.setProperty('--current-val', _R.value - 1);
-    
-    
-  //   _R.addEventListener('input', e => {
-  //     _R.style.setProperty('--current-val', _R.value - 1);
-  //   }, false);
-
 
   //   Input range : NoUISlider
   //   get `data-` from html
