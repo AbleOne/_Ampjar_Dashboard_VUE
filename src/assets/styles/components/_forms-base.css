@@ -1,0 +1,50 @@
+/* Forms */
+
+input:not([type=checkbox]):not([type=radio]):not([type=range]),
+select,
+textarea {
+    @apply appearance-none block text-sm text-gray-700 border border-ampjar_border rounded py-3 px-4 leading-tight;
+
+    &:not(.w-auto) {
+        @apply w-full;
+    }
+
+    &:not([class*="bg-"]) {
+        @apply bg-white; 
+    }
+    
+    &:focus {
+        @apply outline-none bg-gray-100 border-gray-500;
+    }
+}
+
+textarea {
+    resize: vertical;
+    min-height: 46px;
+    @apply leading-relaxed;
+}
+
+form label,
+.form-label {
+    @apply block text-sm font-bold mb-2;
+}
+
+.form-inline {
+    input:not([type=checkbox]),
+    input:not([type=radio]),
+    select,
+    .btn {
+        @apply rounded-none;
+
+        &:first-child {
+            @apply rounded-l;
+        }
+        &:last-child {
+            @apply rounded-r;
+        }
+    }
+    
+    .btn {
+        @apply flex items-center justify-center;
+    }
+}

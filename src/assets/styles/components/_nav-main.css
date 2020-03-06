@@ -31,6 +31,10 @@
     
     > li {
         @apply mb-4 relative;
+
+        &:last-child {
+            @apply mb-0;
+        }
     }
 }
 
@@ -74,6 +78,10 @@
         top: 50%;
         transform: translateY(-50%);
         @apply rounded text-white bg-ampjar_primary whitespace-no-wrap absolute w-0 h-0 px-2 py-1 invisible;
+
+        & + span {
+            display: none;
+        }
     }
     
     a:hover span,
@@ -81,7 +89,7 @@
         @apply w-auto h-auto visible;
     }
     
-    [class*=dropdown-menu] {
+    [class*=dropdown-menu--nav] {
         display: none;
     }
     

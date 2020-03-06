@@ -24,7 +24,7 @@ module.exports = {
         ...defaultTheme.maxWidth,
       },
       fontSize: {
-        'xxs': '0.688em',
+        'xxs': '0.688rem',
         ...defaultTheme.fontSize,
       },
       opacity: {

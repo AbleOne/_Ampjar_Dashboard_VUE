@@ -1,0 +1,48 @@
+/* input type file */
+
+.file-custom {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.file-custom-input {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    /* height: calc(1.5em + .75rem + 2px); */
+    margin: 0;
+    opacity: 0;
+}
+
+.file-custom-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    padding: .375rem .75rem;
+    font-weight: 400;
+    border: 1px solid theme('colors.ampjar_border');
+    border-radius: .25rem;
+    padding-left: 5.75rem;
+}
+
+.file-custom-input:lang(en)~.file-custom-label::after {
+    content: "Browse";
+}
+
+.file-custom-label::after {
+    z-index: 3;
+    height: calc(1.5em + .75rem);
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    content: "Browse";
+    background-color: theme('colors.gray.300');
+    border-right: inherit;
+    @apply rounded inset-y-0 left-0 absolute block;
+}

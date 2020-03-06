@@ -41,6 +41,8 @@
                     <li><a href="#"><img src="./../assets/img/chart.svg" alt="Reporting" /><span>Reporting</span></a></li>
                 </ul>
                 <ul class="nav-side border-t sm:border-t-0 pt-4 sm:pt-0">
+                    <li><a href="#"><img src="./../assets/img/ampcredits.svg" alt="Settings" /><span>Earn Ampcredits</span><span class="ml-2">50%</span></a></li>
+                    <li><a href="#"><img src="./../assets/img/notifications.svg" alt="Settings" /><span>Notifications</span><span class="ml-2 bg-red-500 text-white w-5 h-5 rounded-full flex items-center justify-center"><span class="text-xxs">2</span></span></a></li>
                     <li><a href="#"><img src="./../assets/img/cog.svg" alt="Settings" /><span>Settings</span></a></li>
                     <li>
                         <div class="dropdown dropdown-menu-right-bottom ">

@@ -4,9 +4,23 @@ html {
     @apply font-sans;
 }
 
+body {
+    @apply h-screen;
+}
+
 a {
     @apply text-ampjar_primary;
-}
+    
+    &.text-gray-600 {
+        @apply underline;
+
+        &:hover,
+        &:focus,
+        &:active {
+            @apply text-gray-900;
+        }
+    }
+} 
 
 p:not(:last-child):not([class*=mb]) {
     @apply mb-3;
@@ -26,11 +40,11 @@ code {
 }
 
 .dashboard {
-    @apply flex flex-grow min-h-screen bg-white overflow-hidden;
+    @apply flex flex-grow min-h-screen h-full bg-white overflow-hidden;
 }
 
 .main-content {
-    @apply flex flex-col flex-grow bg-gray-200 pt-20 overflow-y-auto relative;
+    @apply flex flex-col flex-grow bg-gray-200 pt-20 overflow-x-hidden overflow-y-auto relative;
 
     @screen sm {
         @apply min-h-screen pt-0; /* h-screen */

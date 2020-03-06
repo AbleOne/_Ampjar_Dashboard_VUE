@@ -12,7 +12,7 @@
 						</div>
 						<div class="w-full md:w-1/4 lg:w-1/5 px-1 mb-6 lg:mb-0">
 							<div class="relative">
-                                <select id="grid-state">
+                                <select id="email-subscribers">
                                     <option selected>Subscribers</option>
                                     <option>Unsubscribers</option>
                                     <option>To Review</option>
@@ -30,7 +30,7 @@
 						</div>
 						<div class="w-full md:w-1/4 lg:w-1/5 px-1 mb-6 lg:mb-0">
 							<div class="relative">
-                                <select id="grid-state">
+                                <select id="email-subscribers-export">
                                     <option selected>Export</option>
                                     <option>Other option</option>
                                 </select>

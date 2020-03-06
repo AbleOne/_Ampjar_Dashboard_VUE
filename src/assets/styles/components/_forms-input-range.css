@@ -1,0 +1,114 @@
+/* [type=range] */
+
+/* chrome */
+
+.js-range input[type=range]::-webkit-slider-runnable-track {
+    --gradval: calc(var(--current-val) / var(--levels) * 100%);
+    background: linear-gradient(to right, theme('colors.ampjar_primary') 0%, theme('colors.ampjar_primary') var(--gradval), theme('colors.gray.300') var(--gradval), theme('colors.gray.300') 100%);
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type=range] {
+        -webkit-appearance: none;
+    }
+    
+    input[type=range]::-webkit-slider-runnable-track {
+        height: 4px;
+        background: theme('colors.gray.300');
+        -webkit-appearance: none;
+    }
+    
+    input[type=range]::-webkit-slider-thumb {
+        width: 16px;
+        height: 16px;
+        border: 3px solid theme('colors.ampjar_primary');
+        background: theme('colors.white');
+        border-radius: 50%;
+        margin-top: -6px;
+        -webkit-appearance: none;
+        position: relative;
+
+        &:before {
+            content: '';
+            width: 5px;
+            height: 5px;
+            background: red;
+        }
+    }
+}
+
+input[type=range] {
+    @apply w-full h-10 bg-transparent;
+
+    /* ff */
+    &::-moz-range-progress {
+        background-color: theme('colors.ampjar_primary'); 
+    }
+    &::-moz-range-track {  
+        background-color: theme('colors.white'); 
+    }
+    /* ie */
+    &::-ms-fill-lower {
+        background-color: theme('colors.ampjar_primary'); 
+    }
+    &::-ms-fill-upper {  
+        background-color: theme('colors.white');
+    }
+
+    &::-ms-thumb {
+        margin-top:0px !important;
+        height:14px;
+        width:14px;
+    }
+    &::-ms-tooltip {
+        display: none;
+    }
+}
+
+
+/* input type=range : NoUISlider */
+
+.input-range-multi {
+
+    &.noUi-horizontal {
+        height: auto;
+
+        .noUi-base {
+            height: 4px;
+            margin: 18px 0;
+            background-color: theme('colors.gray.300');
+        }
+
+        .noUi-handle {
+            width: 16px;
+            height: 16px;
+            right: -8px;
+            top: -6px;
+        }
+    }
+
+    &.noUi-target {
+        background-color: transparent;
+        border-radius: 0px;
+        border: none;
+        box-shadow: none;
+    }
+
+    .noUi-connect {
+        background: theme('colors.ampjar_primary');
+    }
+
+    .noUi-handle {
+        border: 3px solid theme('colors.ampjar_primary');
+        background: theme('colors.white');
+        @apply rounded-full;
+        cursor: default;
+        box-shadow: none;
+        
+        &:after,
+        &:before {
+            content: none;
+        }
+        
+    }
+}
